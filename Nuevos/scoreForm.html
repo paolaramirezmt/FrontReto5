@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../nuevosJs/scoreForm.js"></script>
+    <link rel="stylesheet" href="../styles.css/style.css">
+    <title>MisionTic</title>
+</head>
+
+<body>
+    <header>
+        <h1>CabinRent</h1>
+    </header>
+    <div id="secondHeader">
+        <ul>
+            <li><a href="./">Principal</a></li>
+            <li><a href="./cabinForm.html">Cabañas</a></li>
+            <li><a href="./clientForm.html">Clientes</a></li>
+            <li><a href="./messageForm.html">Mensajes</a></li>
+            <li><a href="./categoryForm.html">categoría</a></li>
+            <li><a href="./reservationForm.html">Reservación</a></li>
+            <li><a href="./scoreForm.html">Puntuación</a></li>
+            <li><a href="./adminForm.html">Administradores</a></li>
+        </ul>
+    </div>
+    <h2>Nueva calificación <button id="score_details">detalles</button></h2>
+    <table id="table_score" class="tableGet">
+    </table>
+    <form method="POST" class="CrudForms">
+        <fieldset>
+            
+            <div class="formInputs">
+                <label for="id">Id de la calificación</label>
+                <div><input type="number" id="id_score" name="id_score"></div>
+            </div>
+            <div class="formInputs">
+                <label for="scoreValue"> Valor de la calificación</label>
+                <div><input type="Number" id="scoreValue" name="scoreValue"></div>
+            </div>
+            <div class="formInputs">
+                <label for="messageDetails"> Descripción de la calificación</label>
+                <div><textarea type="text" id="messageDetails" name="messageDetails"></textarea></div>
+            </div>
+
+            <div class="buttonsDiv">
+                <button id="submitScore" type="submit">Nuevo</button>
+                <button id="actualizarScore" type="submit">Actualizar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

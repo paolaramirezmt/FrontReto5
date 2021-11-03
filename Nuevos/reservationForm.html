@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../nuevosJs/reservationForm.js"></script>
+    <link rel="stylesheet" href="../styles.css/style.css">
+    <title>MisionTic</title>
+</head>
+
+<body>
+    <header>
+        <h1>CabinRent</h1>
+    </header>
+    <div id="secondHeader">
+        <ul>
+            <li><a href="./">Principal</a></li>
+            <li><a href="./cabinForm.html">Cabañas</a></li>
+            <li><a href="./clientForm.html">Clientes</a></li>
+            <li><a href="./messageForm.html">Mensajes</a></li>
+            <li><a href="./categoryForm.html">categoría</a></li>
+            <li><a href="./reservationForm.html">Reservación</a></li>
+            <li><a href="./scoreForm.html">Puntuación</a></li>
+            <li><a href="./adminForm.html">Administradores</a></li>
+        </ul>
+    </div>
+    <h2>Nueva reserva <button id="reservationDetails">detalles</button></h2>
+    <table id="table_reservation" class="tableGet">
+    </table>
+    <form method="POST" class="CrudForms">
+        <fieldset>
+            
+            <div class="formInputs">
+                <label for="id">Id de la reserva</label>
+                <div><input type="number" id="id_reservation" name="id_reservation"></div>
+            </div>
+            <div class="formInputs">
+                <label for="nameCabin">Cabaña a reservar</label>
+                <div><select id="nameCabin" name="nameCabin"> 
+
+                </select></div>
+            </div>
+            <div class="formInputs">
+                <label for="nameClient">Cliente que reserva</label>
+                <div><select id="nameClient" name="nameClient">
+                    
+                </select></div>
+            </div>
+            <div class="formInputs">
+                <label for="status">Cliente que reserva</label>
+                <div><select id="status" name="status">
+                    <option value="Programado">Programado</option>     
+                    <option value="Cancelado">Cancelado</option>     
+                    <option value="Realizado">Realizado</option>     
+                </select></div>
+            </div>
+            <div class="formInputs">
+                <label for="startDate">Fecha de inicio de reserva</label>
+                <div><input type="datetime-local" id="startDate" name="startDate"></div>
+            </div>
+            <div class="formInputs">
+                <label for="endDate">Fecha de regreso</label>
+                <div><input type="datetime-local" id="endDate" name="endDate"></div>
+            </div>
+
+            <div class="buttonsDiv">
+                <button id="submitReservation" type="submit">Nuevo</button>
+                <button id="updateReservation" type="submit">Actualizar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
