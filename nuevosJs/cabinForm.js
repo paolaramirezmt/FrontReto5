@@ -1,6 +1,6 @@
 window.onload = () => {
-    const urlCabin = "http://129.151.120.12:8080/api/Cabin";
-    getDataCategory("http://129.151.120.12:8080/api/Category/all");
+    const urlCabin = "http://129.151.113.178:8080/api/Cabin";
+    getDataCategory("http://129.151.113.178:8080/api/Category/all");
     const submitCabin = document.querySelector("#submit_cabin");
     const getCabin = document.querySelector("#cabinDetails");
 
@@ -132,7 +132,7 @@ function renderTable(dataMessage) {
 
 function deleteById(id) {
     window.alert("Está seguro que desea borrar esta cabaña");
-    const url = "http://129.151.120.12:8080/api/Cabin";
+    const url = "http://129.151.113.178:8080/api/Cabin";
     fetch(url+"/"+id,{
         method:"DELETE"
     })

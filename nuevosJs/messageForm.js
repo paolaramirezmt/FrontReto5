@@ -1,7 +1,7 @@
 window.onload = () => {
-    const urlMessage = "http://129.151.120.12:8080/api/Message";
-    getDataCabin("http://129.151.120.12:8080/api/Cabin");
-    getDataClient("http://129.151.120.12:8080/api/Client");
+    const urlMessage = "http://129.151.113.178:8080/api/Message";
+    getDataCabin("http://129.151.113.178:8080/api/Cabin");
+    getDataClient("http://129.151.113.178:8080/api/Client");
     const submitMessage = document.querySelector("#submitMessage");
     const messageDetails = document.querySelector("#messageDetails");
 
@@ -94,7 +94,7 @@ function renderTable(dataMessage) {
 
 function deleteById(id) {
     window.alert("Está seguro que desea borrar este mensaje");
-    const url = "http://129.151.120.12:8080/api/Message";
+    const url = "http://129.151.113.178:8080/api/Message";
     fetch(url+"/"+id,{
         method:"DELETE"
     })

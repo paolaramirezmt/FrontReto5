@@ -1,6 +1,6 @@
 window.onload = () => {
     const submitClient = document.querySelector("#submitClient");
-    const urlClient = "http://129.151.120.12:8080/api/Client";
+    const urlClient = "http://129.151.113.178:8080/api/Client";
 
     function dataValClient() {
         const data = {
@@ -120,7 +120,7 @@ function renderTable(dataMessage) {
 
 function deleteById(id) {
     window.alert("Está seguro que desea borrar este cliente");
-    const url = "http://129.151.120.12:8080/api/Client";
+    const url = "http://129.151.113.178:8080/api/Client";
     fetch(url+"/"+id,{
         method:"DELETE"
     })

@@ -1,5 +1,5 @@
 window.onload = () => {
-    const urlCategory = "http://129.151.120.12:8080/api/Category";
+    const urlCategory = "http://129.151.113.178:8080/api/Category";
     function dataCategory() {
         data = {
             "name": $("#name").val(),
@@ -115,7 +115,7 @@ function renderTable(dataMessage) {
 
 function deleteById(id) {   
     window.alert("Está seguro que desea borrar esta cabaña");
-    const url = "http://129.151.120.12:8080/api/Category";
+    const url = "http://129.151.113.178:8080/api/Category";
     fetch(url + "/" + id, {
         method: "DELETE"
     })

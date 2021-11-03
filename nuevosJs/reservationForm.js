@@ -1,7 +1,7 @@
 //ARREGLAR TODO
 
 window.onload = () => {
-    const urlReservation = "http://129.151.120.12:8080/api/Reservation/";
+    const urlReservation = "http://129.151.113.178:8080/api/Reservation/";
     
     function dataReservation() {
         const data = {
@@ -122,7 +122,7 @@ function renderTable(dataMessage) {
 
 function deleteById(id) {
     window.alert("Está seguro que desea borrar esta cabaña");
-    const url = "https://gcb6640089cf2cb-db202109261438.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/cabin/cabin";
+    const url = "http://129.151.113.178:8080/api/Reservation";
     fetch(url+"/"+id,{
         method:"DELETE"
     })
